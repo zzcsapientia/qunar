@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HelloWorld</title>
+    <script src="js/vue.js"></script>
+</head>
+<body>
+    <div id="app">{{content}}</div>
+    <!-- <div>{{content}}</div>
+    <div class="xdd">{{test}}</div> -->
+    <script>
+        //  var dom=document.getElementById('app');
+        //  dom.innerHTML='hello world'
+        // setTimeout(function(){
+        //     dom.innerHTML='change world'
+        // },2000)
+            var a=1;
+        var app=new Vue({//创建vue实例
+            el:'#app', //实例负责管理的区域
+            
+            data:{ //定义数据
+                content:'hello world1'
+            }
+        })
+       setTimeout(function(){
+        app.$data.content='change world'
+       },2000)
+        // var xdd=new Vue({
+        //     el:'.xdd',
+        //     data:{
+        //         test:'test'
+        //     }
+        // })
+    </script>
+</body>
+</html>
