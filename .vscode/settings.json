@@ -1,0 +1,11 @@
+{
+    "editor.fontSize": 17,
+    "git.ignoreLegacyWarning": true,
+    "workbench.colorTheme": "Monokai",
+    "files.autoSave": "off",
+    "workbench.startupEditor": "newUntitledFile",
+    "powermode.enabled": true,
+    "powermode.presets": "fireworks",
+    "powermode.enableShake": false
+
+}
